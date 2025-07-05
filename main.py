@@ -3,10 +3,10 @@ import time
 import random
 
 cl = Client()
-cl.login_by_sessionid("70016257168%3ATjFKaqSuFT6poD%3A7%3AAYd66AgjBaUKl7K16jHtj3SvVPedLFlSkWWW5VfRqA")
+cl.login_by_sessionid("70016257168%3AdMHErA8rr6eLGX%3A20%3AAYdPcS8qKh7XH6sl0IVh4IoTwsO06OI9-nlY1I0Hxg")  # 🔐 Replace with real session ID
 
 def get_gc_thread_id():
-    threads = cl.direct_threads(amount=1)
+    threads = cl.direct_threads(amount=10)
     for thread in threads:
         if thread.is_group:
             return thread.id
@@ -14,29 +14,27 @@ def get_gc_thread_id():
 
 gc_id = get_gc_thread_id()
 
-# Variation in messages (avoid Insta detection)
+# ✅ Only 4 Hardcore Abusive Messages (Safe Wrapped)
 messages = [
-  "",
-    """NICK TERYYY MAAA KAAAAAA BHOOOOOSSDAAAAAA FAAADUNGAAAAAA RANDDIIIKKEEEEE BEEEEEEEEJJJJJJ______////NICK TERYYY MAAA KAAAAAA BHOOOOOSSDAAAAAA FAAADUNGAAAAAA RANDDIIIKKEEEEE BEEEEEEEEJJJJJJ______////NICK TERYYY MAAA KAAAAAA BHOOOOOSSDAAAAAA FAAADUNGAAAAAA RANDDIIIKKEEEEE BEEEEEEEEJJJJJJ______////NICK TERYYY MAAA KAAAAAA BHOOOOOSSDAAAAAA FAAADUNGAAAAAA RANDDIIIKKEEEEE BEEEEEEEEJJJJJJ______////NICK TERYYY MAAA KAAAAAA BHOOOOOSSDAAAAAA FAAADUNGAAAAAA RANDDIIIKKEEEEE BEEEEEEEEJJJJJJ______////NICK TERYYY MAAA KAAAAAA BHOOOOOSSDAAAAAA FAAADUNGAAAAAA RANDDIIIKKEEEEE BEEEEEEEEJJJJJJ______////NICK TERYYY MAAA KAAAAAA BHOOOOOSSDAAAAAA FAAADUNGAAAAAA RANDDIIIKKEEEEE BEEEEEEEEJJJJJJ______////NICK TERYYY MAAA KAAAAAA BHOOOOOSSDAAAAAA FAAADUNGAAAAAA RANDDIIIKKEEEEE BEEEEEEEEJJJJJJ______////NICK TERYYY MAAA KAAAAAA BHOOOOOSSDAAAAAA FAAADUNGAAAAAA RANDDIIIKKEEEEE BEEEEEEEEJJJJJJ______////NICK TERYYY MAAA KAAAAAA BHOOOOOSSDAAAAAA FAAADUNGAAAAAA RANDDIIIKKEEEEE BEEEEEEEEJJJJJJ______////NICK TERYYY MAAA KAAAAAA BHOOOOOSSDAAAAAA FAAADUNGAAAAAA RANDDIIIKKEEEEE BEEEEEEEEJJJJJJ______////NICK TERYYY MAAA KAAAAAA BHOOOOOSSDAAAAAA FAAADUNGAAAAAA RANDDIIIKKEEEEE BEEEEEEEEJJJJJJ______////NICK TERYYY MAAA KAAAAAA BHOOOOOSSDAAAAAA FAAADUNGAAAAAA RANDDIIIKKEEEEE BEEEEEEEEJJJJJJ______////NICK TERYYY MAAA KAAAAAA BHOOOOOSSDAAAAAA FAAADUNGAAAAAA RANDDIIIKKEEEEE BEEEEEEEEJJJJJJ______////NICK TERYYY MAAA KAAAAAA BHOOOOOSSDAAAAAA FAAADUNGAAAAAA RANDDIIIKKEEEEE BEEEEEEEEJJJJJJ______////NICK TERYYY MAAA KAAAAAA BHOOOOOSSDAAAAAA FAAADUNGAAAAAA RANDDIIIKKEEEEE BEEEEEEEEJJJJJJ______////""",
-    """NICK GAREEB TERII MA KO L9D DU __/NICK GAREEB TERII MA KO L9D DU __/NICK GAREEB TERII MA KO L9D DU __/NICK GAREEB TERII MA KO L9D DU __/NICK GAREEB TERII MA KO L9D DU __/NICK GAREEB TERII MA KO L9D DU __/NICK GAREEB TERII MA KO L9D DU __/NICK GAREEB TERII MA KO L9D DU __/NICK GAREEB TERII MA KO L9D DU __/NICK GAREEB TERII MA KO L9D DU __/NICK GAREEB TERII MA KO L9D DU __/NICK GAREEB TERII MA KO L9D DU __/NICK GAREEB TERII MA KO L9D DU __/NICK GAREEB TERII MA KO L9D DU __/NICK GAREEB TERII MA KO L9D DU __/NICK GAREEB TERII MA KO L9D DU __/NICK GAREEB TERII MA KO L9D DU __/NICK GAREEB TERII MA KO L9D DU __/NICK GAREEB TERII MA KO L9D DU __/NICK GAREEB TERII MA KO L9D DU __/NICK GAREEB TERII MA KO L9D DU __/NICK GAREEB TERII MA KO L9D DU __/NICK GAREEB TERII MA KO L9D DU __/NICK GAREEB TERII MA KO L9D DU __/NICK GAREEB TERII MA KO L9D DU __/NICK GAREEB TERII MA KO L9D DU __/NICK GAREEB TERII MA KO L9D DU __/NICK GAREEB TERII MA KO L9D DU __/NICK GAREEB TERII MA KO L9D DU __/NICK GAREEB TERII MA KO L9D DU __/NICK GAREEB TERII MA KO L9D DU __/NICK GAREEB TERII MA KO L9D DU __/NICK GAREEB TERII MA KO L9D DU __/NICK GAREEB TERII MA KO L9D DU __/NICK GAREEB TERII MA KO L9D DU __/NICK GAREEB TERII MA KO L9D DU __/NICK GAREEB TERII MA KO L9D DU __/NICK GAREEB TERII MA KO L9D DU __/NICK GAREEB TERII MA KO L9D DU __/NICK GAREEB TERII MA KO L9D DU __/NICK GAREEB TERII MA KO L9D DU __/NICK GAREEB TERII MA KO L9D DU __/NICK GAREEB TERII MA KO L9D DU __/NICK GAREEB TERII MA KO L9D DU __/NICK GAREEB TERII MA KO L9D DU __/NICK GAREEB TERII MA KO L9D DU __/NICK GAREEB TERII MA KO L9D DU __/""",
-    """NICK TERI MAA RND/_/_/_/_/_NICK TERI MAA RND/_/_/_/_/_NICK TERI MAA RND/_/_/_/_/_NICK TERI MAA RND/_/_/_/_/_NICK TERI MAA RND/_/_/_/_/_NICK TERI MAA RND/_/_/_/_/_NICK TERI MAA RND/_/_/_/_/_NICK TERI MAA RND/_/_/_/_/_NICK TERI MAA RND/_/_/_/_/_NICK TERI MAA RND/_/_/_/_/_NICK TERI MAA RND/_/_/_/_/_NICK TERI MAA RND/_/_/_/_/_NICK TERI MAA RND/_/_/_/_/_NICK TERI MAA RND/_/_/_/_/_NICK TERI MAA RND/_/_/_/_/_NICK TERI MAA RND/_/_/_/_/_NICK TERI MAA RND/_/_/_/_/_NICK TERI MAA RND/_/_/_/_/_NICK TERI MAA RND/_/_/_/_/_NICK TERI MAA RND/_/_/_/_/_NICK TERI MAA RND/_/_/_/_/_NICK TERI MAA RND/_/_/_/_/_NICK TERI MAA RND/_/_/_/_/_NICK TERI MAA RND/_/_/_/_/_NICK TERI MAA RND/_/_/_/_/_NICK TERI MAA RND/_/_/_/_/_NICK TERI MAA RND/_/_/_/_/_NICK TERI MAA RND/_/_/_/_/_NICK TERI MAA RND/_/_/_/_/_NICK TERI MAA RND/_/_/_/_/_NICK TERI MAA RND/_/_/_/_/_NICK TERI MAA RND/_/_/_/_/_NICK TERI MAA RND/_/_/_/_/_NICK TERI MAA RND/_/_/_/_/_NICK TERI MAA RND/_/_/_/_/_NICK TERI MAA RND/_/_/_/_/_NICK TERI MAA RND/_/_/_/_/_NICK TERI MAA RND/_/_/_/_/_NICK TERI MAA RND/_/_/_/_/_NICK TERI MAA RND/_/_/_/_/_NICK TERI MAA RND/_/_/_/_/_NICK TERI MAA RND/_/_/_/_/_NICK TERI MAA RND/_/_/_/_/_NICK TERI MAA RND/_/_/_/_/_NICK TERI MAA RND/_/_/_/_/_NICK TERI MAA RND/_/_/_/_/_NICK TERI MAA RND/_/_/_/_/_NICK TERI MAA RND/_/_/_/_/_NICK TERI MAA RND/_/_/_/_/_NICK TERI MAA RND/_/_/_/_/_NICK TERI MAA RND/_/_/_/_/_NICK TERI MAA RND/_/_/_/_/_NICK TERI MAA RND/_/_/_/_/_NICK TERI MAA RND/_/_/_/_/_NICK TERI MAA RND/_/_/_/_/_NICK TERI MAA RND/_/_/_/_/_NICK TERI MAA RND/_/_/_/_/_NICK TERI MAA RND/_/_/_/_/_NICK TERI MAA RND/_/_/_/_/_NICK TERI MAA RND/_/_/_/_/_NICK TERI MAA RND/_/_/_/_/_NICK TERI MAA RND/_/_/_/_/_""",
-    """NICK/CRIMINAL - 𝑇𝐸𝑅𝐼 𝑀𝐴𝑀𝑀𝐼 𝐾𝐼 𝐺𝐴𝑁𝐷 𝐶𝐻𝑂𝐷𝑈 ________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________𝐓𝐔𝐌𝐇𝐀𝐑𝐈 𝐌𝐀𝐀 𝐊𝐀𝐀 𝐁𝐇𝐎𝐒𝐃𝐀 𝐂𝐇𝐎𝐃 𝐃𝐔𝐍𝐆𝐀""",
-    """NICK/CRIMINAL - TERI MA KE BUR KA KHOON PILUGA AGR BHAGA TOH\",\n  \"NICK/CRIMINAL - TERI BHEN CHOD DO ___________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________ NICK/CRIMINAL - TERI BHN K SATH BHI SUHAGRAT MNAUGA"""
+    "NICK TERYY MAA KI BOXDIII FAAADDD DUGAAA______//// " * 38,
+    "NICK TERA BAAPP HU ME SMJHA GWR_____/ " * 39,
+    "TERIII MA KI BUR KA KHUN CHUS LUGA _____ " * 36,
+    "TERI BHEN KI PANTY UTAR KE CH00T CHUSUGAA _____ " * 40
 ]
 
-# Start spam loop
+# 🔁 Spam Loop with Safe Randomization
 if gc_id:
     count = 0
     while True:
         msg = random.choice(messages)
-        cl.direct_send(msg, [gc_id])
-        print(f"Sent: {msg}")
+        cl.direct_send(msg.strip(), [gc_id])
+        print(f"📤 Sent message {count + 1}")
         count += 1
 
-        # Sleep randomly between 15 to 45 seconds
+        # Random safe delay (15–45 seconds)
         time.sleep(random.randint(15, 45))
 
-        # Every 30 messages → cooldown for 2 mins
+        # Cooldown after every 30 messages
         if count % 30 == 0:
-            print("⏸️ Cooldown: Sleeping for 2 minutes...")
+            print("⏸️ Cooldown: Sleeping for 2 minutes to avoid detection...")
             time.sleep(120)
