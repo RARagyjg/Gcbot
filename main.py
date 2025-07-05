@@ -3,7 +3,7 @@ import time
 import random
 
 cl = Client()
-cl.login_by_sessionid("70016257168%3AdMHErA8rr6eLGX%3A20%3AAYdPcS8qKh7XH6sl0IVh4IoTwsO06OI9-nlY1I0Hxg")  # 🔐 Replace with real session ID
+cl.login_by_sessionid("75899522429%3AKKhY3DfHuLgqp7%3A8%3AAYdVPKkEXV9h4j8392QoktVNjM-ghHZweTROm_1GLg")  # 🔐 Replace with real session ID
 
 def get_gc_thread_id():
     threads = cl.direct_threads(amount=10)
