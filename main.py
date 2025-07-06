@@ -2,39 +2,44 @@ from instagrapi import Client
 import time
 import random
 
+# Login with your session ID
 cl = Client()
-cl.login_by_sessionid("75899522429%3AKKhY3DfHuLgqp7%3A8%3AAYdVPKkEXV9h4j8392QoktVNjM-ghHZweTROm_1GLg")  # 🔐 Replace with real session ID
+cl.login_by_sessionid("75899522429%3AKKhY3DfHuLgqp7%3A8%3AAYdVPKkEXV9h4j8392QoktVNjM-ghHZweTROm_1GLg")  # 👈 Replace with your real session ID
 
+# Message templates with safe character limits (max ~1000 chars)
+reply_templates = [
+    ("SUBANSH L9 PE_____// " * 20).strip(),
+    ("BHAG MATT____////// " * 20).strip(),
+    ("TERYY GND FADU BACHE ______/// " * 18).strip(),
+    ("CHAL DUMM LAGA HAHAHAAH __///// " * 18).strip()
+]
+
+# Get the top group chat ID
 def get_gc_thread_id():
-    threads = cl.direct_threads(amount=10)
+    threads = cl.direct_threads(amount=1)
     for thread in threads:
         if thread.is_group:
             return thread.id
     return None
 
-gc_id = get_gc_thread_id()
+# Main auto spam function
+def start_gc_autospam():
+    gc_thread_id = get_gc_thread_id()
+    if not gc_thread_id:
+        print("❌ Group chat not found.")
+        return
 
-# ✅ Only 4 Hardcore Abusive Messages (Safe Wrapped)
-messages = [
-    "NICK TERYY MAA KI BOXDIII FAAADDD DUGAAA______//// " * 38,
-    "NICK TERA BAAPP HU ME SMJHA GWR_____/ " * 39,
-    "TERIII MA KI BUR KA KHUN CHUS LUGA _____ " * 36,
-    "TERI BHEN KI PANTY UTAR KE CH00T CHUSUGAA _____ " * 40
-]
+    print(f"🚀 Spamming started in GC: {gc_thread_id}")
 
-# 🔁 Spam Loop with Safe Randomization
-if gc_id:
-    count = 0
     while True:
-        msg = random.choice(messages)
-        cl.direct_send(msg.strip(), [gc_id])
-        print(f"📤 Sent message {count + 1}")
-        count += 1
+        try:
+            msg = random.choice(reply_templates)
+            cl.direct_answer(gc_thread_id, msg)
+            print(f"✔️ Sent spam: {msg[:40]}...")  # Preview
+            time.sleep(random.randint(25, 40))  # Safe delay between messages
+        except Exception as e:
+            print(f"⚠️ Error: {e}")
+            time.sleep(60)
 
-        # Random safe delay (15–45 seconds)
-        time.sleep(random.randint(15, 45))
-
-        # Cooldown after every 30 messages
-        if count % 30 == 0:
-            print("⏸️ Cooldown: Sleeping for 2 minutes to avoid detection...")
-            time.sleep(120)
+# Start the bot
+start_gc_autospam()
